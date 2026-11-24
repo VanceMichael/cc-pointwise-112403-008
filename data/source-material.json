@@ -1,31 +1,102 @@
 {
-  "name": "公共投资项目里程碑与统计期回执采集库",
+  "name": "公共投资标段进展与支付期间采集核对",
   "material_nature": "本地合成演练资料",
-  "description": "仅供本地开发和回归，记录不代表真实机构、交易或观测。",
-  "records": {
-    "projects": [
-      {
-        "source_id": "X-21",
-        "name": "北区更新",
-        "period": "2026-10",
-        "revision": 2
-      }
-    ],
-    "milestones": [
-      {
-        "id": "M-7",
-        "project": "X-21",
-        "state": "returned"
-      }
-    ],
-    "payments": [
-      {
-        "id": "PAY-9",
-        "project": "X-21",
-        "period": "2026-10",
-        "state": "received"
-      }
-    ],
-    "notes": "合成项目、监理和财政回执片段。"
-  }
+  "description": "资料中的机构、项目、交易、合同和回执均为虚构，仅用于本地开发与回归。",
+  "feeds": [
+    {
+      "id": "projects",
+      "label": "项目与标段门户",
+      "records": [
+        {
+          "project": "北区更新",
+          "source_id": "X-21",
+          "segment": "S-A",
+          "period": "2026-10",
+          "revision": 2,
+          "plan_amount": "900"
+        },
+        {
+          "project": "北区更新",
+          "source_id": "X-21",
+          "segment": "S-B",
+          "period": "2026-10",
+          "revision": 2,
+          "plan_amount": "600"
+        },
+        {
+          "project": "北区更新",
+          "source_id": "X-21B",
+          "segment": "S-C",
+          "period": "2026-11",
+          "change": "split-from-S-B"
+        }
+      ]
+    },
+    {
+      "id": "milestones",
+      "label": "施工填报与监理节点",
+      "records": [
+        {
+          "segment": "S-A",
+          "milestone": "M-7",
+          "period": "2026-10",
+          "contractor_progress": "80%",
+          "inspector_state": "returned",
+          "reason": "缺验收记录"
+        },
+        {
+          "segment": "S-A",
+          "milestone": "M-8",
+          "period": "2026-10",
+          "contractor_progress": "100%",
+          "inspector_state": "accepted",
+          "evidence": "I-8"
+        },
+        {
+          "segment": "S-B",
+          "milestone": "M-9",
+          "period": "2026-10",
+          "contractor_progress": "40%",
+          "inspector_state": "accepted",
+          "evidence": "I-9"
+        }
+      ]
+    },
+    {
+      "id": "payments",
+      "label": "财政回执与月报",
+      "records": [
+        {
+          "receipt": "PAY-31",
+          "period": "2026-10",
+          "amount": "90",
+          "kind": "预付款",
+          "segments": "S-A"
+        },
+        {
+          "receipt": "PAY-32",
+          "period": "2026-10",
+          "amount": "60",
+          "kind": "进度款",
+          "segments": "S-A,S-B",
+          "allocation": "30,30"
+        },
+        {
+          "receipt": "PAY-33",
+          "accounting_period": "2026-10",
+          "received_at": "2026-11-04",
+          "amount": "20",
+          "kind": "进度款",
+          "segments": "S-B",
+          "received_late": "yes"
+        },
+        {
+          "report": "月报-10",
+          "project": "X-21",
+          "state": "reviewed",
+          "quoted_progress": "S-A 80%, S-B 40%"
+        }
+      ]
+    }
+  ]
 }

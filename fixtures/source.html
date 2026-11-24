@@ -1,18 +1,8 @@
 <!doctype html>
 <html lang="zh-CN">
-<head><meta charset="utf-8"><title>公共投资项目里程碑与统计期回执采集库 合成来源页</title></head>
-<body><main><h1>公共投资项目里程碑与统计期回执采集库</h1><p>本页为虚构合成来源，仅供本地演练。</p>
-<table><tbody>
-      <tr><th>projects[0].source_id</th><td>X-21</td></tr>
-      <tr><th>projects[0].name</th><td>北区更新</td></tr>
-      <tr><th>projects[0].period</th><td>2026-10</td></tr>
-      <tr><th>projects[0].revision</th><td>2</td></tr>
-      <tr><th>milestones[0].id</th><td>M-7</td></tr>
-      <tr><th>milestones[0].project</th><td>X-21</td></tr>
-      <tr><th>milestones[0].state</th><td>returned</td></tr>
-      <tr><th>payments[0].id</th><td>PAY-9</td></tr>
-      <tr><th>payments[0].project</th><td>X-21</td></tr>
-      <tr><th>payments[0].period</th><td>2026-10</td></tr>
-      <tr><th>payments[0].state</th><td>received</td></tr>
-      <tr><th>notes</th><td>合成项目、监理和财政回执片段。</td></tr>
-</tbody></table></main></body></html>
+<head><meta charset="utf-8"><title>公共投资标段进展与支付期间采集核对 合成来源页</title></head>
+<body><main><h1>公共投资标段进展与支付期间采集核对</h1><p>本页及其记录均为虚构合成演练资料。</p>
+<section data-source="projects"><h2>项目与标段门户</h2><table><caption>projects</caption><tbody><tr><th>project</th><td>北区更新</td></tr><tr><th>source_id</th><td>X-21</td></tr><tr><th>segment</th><td>S-A</td></tr><tr><th>period</th><td>2026-10</td></tr><tr><th>revision</th><td>2</td></tr><tr><th>plan_amount</th><td>900</td></tr></tbody></table><table><caption>projects</caption><tbody><tr><th>project</th><td>北区更新</td></tr><tr><th>source_id</th><td>X-21</td></tr><tr><th>segment</th><td>S-B</td></tr><tr><th>period</th><td>2026-10</td></tr><tr><th>revision</th><td>2</td></tr><tr><th>plan_amount</th><td>600</td></tr></tbody></table><table><caption>projects</caption><tbody><tr><th>project</th><td>北区更新</td></tr><tr><th>source_id</th><td>X-21B</td></tr><tr><th>segment</th><td>S-C</td></tr><tr><th>period</th><td>2026-11</td></tr><tr><th>change</th><td>split-from-S-B</td></tr></tbody></table></section>
+<section data-source="milestones"><h2>施工填报与监理节点</h2><table><caption>milestones</caption><tbody><tr><th>segment</th><td>S-A</td></tr><tr><th>milestone</th><td>M-7</td></tr><tr><th>period</th><td>2026-10</td></tr><tr><th>contractor_progress</th><td>80%</td></tr><tr><th>inspector_state</th><td>returned</td></tr><tr><th>reason</th><td>缺验收记录</td></tr></tbody></table><table><caption>milestones</caption><tbody><tr><th>segment</th><td>S-A</td></tr><tr><th>milestone</th><td>M-8</td></tr><tr><th>period</th><td>2026-10</td></tr><tr><th>contractor_progress</th><td>100%</td></tr><tr><th>inspector_state</th><td>accepted</td></tr><tr><th>evidence</th><td>I-8</td></tr></tbody></table><table><caption>milestones</caption><tbody><tr><th>segment</th><td>S-B</td></tr><tr><th>milestone</th><td>M-9</td></tr><tr><th>period</th><td>2026-10</td></tr><tr><th>contractor_progress</th><td>40%</td></tr><tr><th>inspector_state</th><td>accepted</td></tr><tr><th>evidence</th><td>I-9</td></tr></tbody></table></section>
+<section data-source="payments"><h2>财政回执与月报</h2><table><caption>payments</caption><tbody><tr><th>receipt</th><td>PAY-31</td></tr><tr><th>period</th><td>2026-10</td></tr><tr><th>amount</th><td>90</td></tr><tr><th>kind</th><td>预付款</td></tr><tr><th>segments</th><td>S-A</td></tr></tbody></table><table><caption>payments</caption><tbody><tr><th>receipt</th><td>PAY-32</td></tr><tr><th>period</th><td>2026-10</td></tr><tr><th>amount</th><td>60</td></tr><tr><th>kind</th><td>进度款</td></tr><tr><th>segments</th><td>S-A,S-B</td></tr><tr><th>allocation</th><td>30,30</td></tr></tbody></table><table><caption>payments</caption><tbody><tr><th>receipt</th><td>PAY-33</td></tr><tr><th>accounting_period</th><td>2026-10</td></tr><tr><th>received_at</th><td>2026-11-04</td></tr><tr><th>amount</th><td>20</td></tr><tr><th>kind</th><td>进度款</td></tr><tr><th>segments</th><td>S-B</td></tr><tr><th>received_late</th><td>yes</td></tr></tbody></table><table><caption>payments</caption><tbody><tr><th>report</th><td>月报-10</td></tr><tr><th>project</th><td>X-21</td></tr><tr><th>state</th><td>reviewed</td></tr><tr><th>quoted_progress</th><td>S-A 80%, S-B 40%</td></tr></tbody></table></section>
+</main></body></html>
