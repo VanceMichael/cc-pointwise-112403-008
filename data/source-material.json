@@ -1,0 +1,31 @@
+{
+  "name": "公共投资项目里程碑与统计期回执采集库",
+  "material_nature": "本地合成演练资料",
+  "description": "仅供本地开发和回归，记录不代表真实机构、交易或观测。",
+  "records": {
+    "projects": [
+      {
+        "source_id": "X-21",
+        "name": "北区更新",
+        "period": "2026-10",
+        "revision": 2
+      }
+    ],
+    "milestones": [
+      {
+        "id": "M-7",
+        "project": "X-21",
+        "state": "returned"
+      }
+    ],
+    "payments": [
+      {
+        "id": "PAY-9",
+        "project": "X-21",
+        "period": "2026-10",
+        "state": "received"
+      }
+    ],
+    "notes": "合成项目、监理和财政回执片段。"
+  }
+}
